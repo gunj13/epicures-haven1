@@ -10,13 +10,49 @@ body {
   background-image: url('bgimage.png'); /* Add the URL of the image here */
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 header {
-  background-color: #bb610c8e;
-  color: white;
+  background-color: #f0d396;
+  color: black;
   text-align: center;
   padding: 1rem;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#bd651351;
+  color: black;
+  font-size: large;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#BD6513;
+  color: white;
 }
 
 
@@ -28,8 +64,15 @@ pre {
     display: inline-block;
     vertical-align:top;
   }
+
+
 main {
   padding: 2rem;
+  background-image: url(/eazytrendz_2975_trend20201030124515.jpg);
+  background-repeat: no-repeat;
+  height:100%;
+  width:100%;
+
 }
 
 .reservation-form {

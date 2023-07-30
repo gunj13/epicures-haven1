@@ -121,7 +121,7 @@ pre {
   padding:20px;
 }
   
-footer {
+.foot {
   background-color:#bb610c8e;
   color: black;
   text-align: center;
@@ -140,4 +140,9 @@ html {
   margin-left: 30px;
   margin-right: 30px;
   font-size: large;
+}
+
+footer {
+  border: 2px solid black;
+  padding:8px;
 }
