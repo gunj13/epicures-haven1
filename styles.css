@@ -68,10 +68,13 @@ pre {
 
 main {
   padding: 2rem;
-  background-image: url(/eazytrendz_2975_trend20201030124515.jpg);
+  background-image: url(/ESOeL3RI-Interior-Shot-4-1200x799.png);
   background-repeat: no-repeat;
   height:100%;
   width:100%;
+  background-size:cover;
+background-repeat: no-repeat;
+background-position: center center;
 
 }
 
