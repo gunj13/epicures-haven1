@@ -1,15 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="stylesheet" href="menustyle.css">
+        <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+        <style>
+        .topnav {
+            font-family: 'Cinzel Decorative';font-size: 22px;
+            font-weight: bold;
+            }
+        </style>
+    </head>
 <body>
-    <!--Fork knife animation-->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    <header>
+        <inline> <video id="video" src="circle_logo.mp4" height="250" autoplay loop alt="logo"></video>
+        <pre><h1>Epicure's Haven</h1>
+          <h4>Indulge in the Art of Culinary Bliss</h4></pre>
+        <pre id="location">Epicure's Haven
+               #45, Church Street, Ashok Nagar
+        Bangalore 560087</pre>
+      </inline>
+      
+    
+        <div class="topnav" class="child">
+            <a href="index.html">Home</a>
+            <a href="story.html">Our Story</a>
+            <a class="active" href="menu.html">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="reserve.html">Reserve a Table</a>
+          </div>
 
-    <lottie-player src="https://lottie.host/c0557157-1fc0-4f9d-8e1e-d81ee4085df1/44297CgCQ0.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-
+         
+            <section class="menus-area">
+                <div class="container">
+                    <div class="section-title">
+                        <h4>exclusive menu</h4>
+                    </div>
+                    <div class="menus">
+                        <div class="menu-items">
+                            <div class="title">breakfast</div>
+                            <div class="single-menu">
+                                <span>$50</span>
+                                <img src="img/food1.jpg" alt="">
+                                <h4>food title 1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                                <a href="">order now</a>
+                            </div>
+                            <div class="single-menu">
+                                <span>$50</span>
+                                <img src="img/food2.jpg" alt="">
+                                <h4>food title 2</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                                <a href="">order now</a>
+                            </div>
+                        </div>
+                        <div class="menu-items">
+                            <div class="title">lunch</div>
+                            <div class="single-menu">
+                                <span>$50</span>
+                                <img src="img/food3.jpg" alt="">
+                                <h4>food title 3</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                                <a href="">order now</a>
+                            </div>
+                            <div class="single-menu">
+                                <span>$50</span>
+                                <img src="img/food4.jpg" alt="">
+                                <h4>food title 4</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                                <a href="">order now</a>
+                            </div>
+                        </div>
+                        <div class="menu-items">
+                            <div class="title">dinner</div>
+                            <div class="single-menu">
+                                <span>$50</span>
+                                <img src="img/food5.jpg" alt="">
+                                <h4>food title 5</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                                <a href="">order now</a>
+                            </div>
+                            <div class="single-menu">
+                                <span>$50</span>
+                                <img src="img/food6.jpg" alt="">
+                                <h4>food title 6</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                                <a href="">order now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+    </header>
 </body>
 </html>

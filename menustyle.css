@@ -1,0 +1,314 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:#bd651351;
+    color: black;
+    font-size: large;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #BD6513;
+    color: white;
+}
+
+video:focus {
+  outline:none;
+}
+
+body {
+  text-align: center;
+  background-color: #f0d396;
+}
+  
+h4 {
+  display: inline-block;
+}
+pre {
+  font-family:Cinzel Decorative ;
+  display: inline-block;
+  vertical-align:top;
+}
+
+#location {
+  font-family:cinzel decorative;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align:top;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .gallery-container {
+    justify-content: center; /* Horizontally center the items */
+    position: relative;
+    max-width: 700px;
+    float: center;
+   left:400px;
+  }
+  
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  float: center;
+  text-align: center;
+}
+
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+.Testimonial-content {
+  background-color: white;
+  display:inline-block;
+  width:250px;
+  height:400px;
+  padding:20px;
+}
+  
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  border:#BD6513;
+  border-radius: 10px;
+  border-style: double;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: large;
+  padding:8px;
+}
+
+footer {
+  border: 2px solid black;
+  padding:8px;
+}
+
+#button1 {
+  padding:5px;
+  height:50px;
+  width:120px;
+  font-size: 15px;
+  text-decoration:none;
+  background-color:#e37231;
+  color:WHITE;
+  border-radius: 10px;
+  font-family: 'Times New Roman';
+}
+
+#button2 {
+  padding:5px;
+  height:50px;
+  width:120px;
+  font-size: 15px;
+  text-decoration:none;
+  color:white;
+  background-color:rgba(30, 0, 200, 0.96);
+  border-radius: 10px;
+  font-family: 'Times New Roman';
+}
+
+
+.map {
+ float:right;
+ margin-top: -260px;
+ margin-right:200px;
+}
+
+
+.foot {
+  background-color:#bb610c8e;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  padding: 5px;
+}
+
+address {
+  margin-left:50px;
+}
+
+body{
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.menus-area {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  color: #000000;
+}
+.menus-area:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #f0d396;
+  z-index: -1;
+  opacity: .95;
+  left: 0;
+  top: 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h4 {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+.menus {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-items {
+  flex-basis: 32%;
+}
+.title {
+  background-color: #ff7720;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.single-menu {
+  background-color:  #e79d6f;
+  border: 10px solid #ddd;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  transition: .3s;
+  margin-bottom: 30px;
+}
+.single-menu span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #ff7720;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 15px 0 0 0;
+}
+.single-menu img {
+  max-width: 80px;
+  border: 1px solid #ddd;
+  padding: 3px;
+  transition: .3s;
+}
+.single-menu h4 {
+  border-bottom: 1px dashed #ddd;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+.single-menu a {
+  display: inline-block;
+  color: #ff7720;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.single-menu:hover img {
+  border-radius: 50%;
+}
+.single-menu:hover {
+  border-color: #ff7720;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container{
+    width: 350px;
+  }
+  .section-title h4 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .menu-items {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
