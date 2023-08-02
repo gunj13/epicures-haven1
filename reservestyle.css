@@ -4,14 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-image: url('bgimage.png'); /* Add the URL of the image here */
-  background-size: cover;
-  background-repeat: no-repeat;
 
-}
 
 header {
   background-color: #f0d396;
@@ -20,7 +13,6 @@ header {
   padding: 1rem;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   background-color: white;
   overflow: hidden;
@@ -30,7 +22,6 @@ header {
   z-index: 99999;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: center;
   color: black;
@@ -42,14 +33,12 @@ header {
   margin-bottom: 30px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color:#bd651351;
   color: black;
   font-size: large;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color:#BD6513;
   color: white;
@@ -65,65 +54,89 @@ pre {
     vertical-align:top;
   }
 
+new
 
-main {
-  padding: 2rem;
-  background-image: url(/ESOeL3RI-Interior-Shot-4-1200x799.png);
-  background-repeat: no-repeat;
-  height:100%;
-  width:100%;
-  background-size:cover;
-background-repeat: no-repeat;
-background-position: center center;
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner-img.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url("reservation_3.jpeg") center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
 }
 
-.reservation-form {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #333;
-
-}
-
-form div {
-  margin-bottom: 1rem;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  color: #333;
-
-}
-
-input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  background-color: #f5f5f5;
-}
-
-button {
-  background-color: #e84393;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  
-}
-
-button:hover {
-  background-color: #c0392b;
+footer {
+  border: 2px solid black;
+  padding:8px;
 }

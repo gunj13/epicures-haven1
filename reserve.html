@@ -8,10 +8,13 @@
   <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
     <style>
     .topnav {
-        font-family: 'Cinzel Decorative';font-size: 22px;
-        font-weight: bold
-        }
+        font-family: 'Cinzel Decorative';
+        font-size: 22px;
+        font-weight: bold;
+    }
     </style>
+  
+   
 </head>
 <body>
   <header>
@@ -21,10 +24,10 @@
     </inline>
   
       <div class="topnav" class="child">
-          <a href="/index.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="story.html">Our Story</a>
           <a href="menu.html">Menu</a>
-          <a href="/index.html#contact ">Contact</a>
+          <a href="/index.html#contact">Contact</a>
           <a class="active" href="reserve.html">Reserve a Table</a>
         </div>
     </div>
@@ -32,41 +35,84 @@
   
   </header>
 
-  <main class="main-content">
-    <section class="reservation-form">
-      <h2>Reserve a Table</h2>
-      <form id="reservationForm">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" required>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" required>
-        </div>
-        <div>
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" required>
-        </div>
-        <div>
-          <label for="guests">Number of Guests:</label>
-          <input type="number" id="guests" required>
-        </div>
-        <div>
-          <label for="date">Date:</label>
-          <input type="date" id="date" required>
-        </div>
-        <div>
-          <label for="time">Time:</label>
-          <input type="time" id="time" required>
-        </div>
-        <div>
-          <button type="submit">Reserve Now</button>
-        </div>
-      </form>
-    </section>
-  </main>
+  <body>
+        
+    <section class="banner">
+      <h2 style="color: white;">Make a Reservation</h2>
 
-  <script src="script.js"></script>
+        <div class="card-container">
+            <div class="card-img">
+                
+            </div>
+
+            <div class="card-content">
+                <h3>Reservation</h3>
+                <form id="reservation-form">
+                    <div class="form-row">
+                        <select name="days">
+                            <option value="day-select">Select Day</option>
+                            <option value="sunday">Sunday</option>
+                            <option value = "monday">Monday</option>
+                            <option value = "tuesday">Tuesday</option>
+                            <option value = "wednesday">Wednesday</option>
+                            <option value = "thursday">Thursday</option>
+                            <option value = "friday">Friday</option>
+                            <option value = "saturday">Saturday</option>
+                            
+                        </select>
+
+                        <select name="hours">
+                            <option value="hour-select">Select Hour</option>
+                            <option value="10">10: 00</option>
+                            <option value = "10">12: 00</option>
+                            <option value = "10">14: 00</option>
+                            <option value = "10">16: 00</option>
+                            <option value = "10">18: 00</option>
+                            <option value = "10">20: 00</option>
+                            <option value = "10">22: 00</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" name="fullName" placeholder="Full Name">
+                        <input type="text" name="phoneNumber" placeholder="Phone Number">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="number" name="persons" placeholder="How Many Persons?" min="1">
+                        <input type="submit" value="BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const reservationForm = document.getElementById("reservation-form");
+
+        reservationForm.addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            
+            const fullName = reservationForm.elements.fullName.value;
+            const phoneNumber = reservationForm.elements.phoneNumber.value;
+            const persons = reservationForm.elements.persons.value;
+
+            
+            if (fullName && phoneNumber && persons) {
+                
+                alert(`Table reserved for ${persons} persons.\nName: ${fullName}\nPhone: ${phoneNumber}`);
+                
+                reservationForm.reset();
+            } else {
+                
+                alert("Please fill in all the required fields.");
+            }
+        });
+    </script>
+    <footer>
+      Website Powered by TEAM-7 ✨
+      Copyright@Team-7
+      All Rights Reserved.
+    </footer>
 </body>
 </html>
