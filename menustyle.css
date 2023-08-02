@@ -41,6 +41,16 @@ body {
   text-align: center;
   background-color: #f0d396;
 }
+.menus-area{
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner-img.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
   
 h4 {
   display: inline-block;
@@ -63,169 +73,14 @@ pre {
 * {
     box-sizing: border-box;
   }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .gallery-container {
-    justify-content: center; /* Horizontally center the items */
-    position: relative;
-    max-width: 700px;
-    float: center;
-   left:400px;
-  }
-  
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  float: center;
-  text-align: center;
-}
-
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
 
 
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-.Testimonial-content {
-  background-color: white;
-  display:inline-block;
-  width:250px;
-  height:400px;
-  padding:20px;
-}
-  
-
-html {
-  scroll-behavior: smooth;
-}
-
-.page {
-  border:#BD6513;
-  border-radius: 10px;
-  border-style: double;
-  margin-left: 30px;
-  margin-right: 30px;
-  font-size: large;
-  padding:8px;
-}
-
-footer {
-  border: 2px solid black;
-  padding:8px;
-}
-
-#button1 {
-  padding:5px;
-  height:50px;
-  width:120px;
-  font-size: 15px;
-  text-decoration:none;
-  background-color:#e37231;
-  color:WHITE;
-  border-radius: 10px;
-  font-family: 'Times New Roman';
-}
-
-#button2 {
-  padding:5px;
-  height:50px;
-  width:120px;
-  font-size: 15px;
-  text-decoration:none;
-  color:white;
-  background-color:rgba(30, 0, 200, 0.96);
-  border-radius: 10px;
-  font-family: 'Times New Roman';
-}
-
-
-.map {
- float:right;
- margin-top: -260px;
- margin-right:200px;
-}
-
-
-.foot {
-  background-color:#bb610c8e;
-  color: black;
-  text-align: left;
-  font-size: 20px;
-  padding: 5px;
-}
-
-address {
-  margin-left:50px;
-}
-
-body{
-    font-family: 'Lexend', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-}
 .container{
     width: 1200px;
     margin: 0 auto;
 }
 
-.menus-area {
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: 2;
-  padding: 0;
-  color: #000000;
-}
-.menus-area:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #f0d396;
-  z-index: -1;
-  opacity: .95;
-  left: 0;
-  top: 0;
-}
+
 .section-title {
   text-align: center;
   margin-bottom: 60px;
@@ -311,4 +166,15 @@ body{
     flex-basis: 100%;
     margin-bottom: 30px;
   }
+}
+footer {
+  border: 2px solid black;
+  padding:8px;
+}
+.foot {
+  background-color:#bb610c8e;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  padding: 5px;
 }

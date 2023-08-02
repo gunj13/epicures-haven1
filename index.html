@@ -84,37 +84,49 @@
     </div>
 
     
-<div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-  </div>
-  
-
-    <script>let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        // Next/previous controls
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        // Thumbnail image controls
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slides[slideIndex-1].style.display = "block";          
-        }
-        </script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+    
+    // Automatic slideshow
+    let slideInterval = setInterval(() => {
+      plusSlides(1);
+    }, 2000); // Change slide every 4 seconds
+    
+    // Pause the slideshow when hovering over images
+    document.querySelectorAll('.mySlides').forEach(slide => {
+      slide.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+      });
+    
+      slide.addEventListener('mouseleave', () => {
+        slideInterval = setInterval(() => {
+          plusSlides(1);
+        }, 3000);
+      });
+    });
+    </script>
 
 <!--
     <img  src="https://www.architectandinteriorsindia.com/cloud/2021/12/03/ESOeL3RI-Interior-Shot-4-1200x799.jpg" style="width:100%">
@@ -135,7 +147,7 @@
 <p style="color:olive"><i>Order Now!</i></p>
 <a href="#contact"><button id="button1">Order on Call</button></a>
 &nbsp;&nbsp;
-<a href="/menu.html" ><button id="button2">Order Online</button></a>
+<a href="menu.html" ><button id="button2">Order Online</button></a>
 </div>
 </div>
 <br>
@@ -177,7 +189,7 @@
 <div class="foot">
     <address id="contact">
       <h3>CONTACT US</h3>
-        We love to hear from you!<br><br>
+        We'd love to hear from you!<br><br>
         Email us at: <a style="color:rgb(120, 56, 4)" href="mailto: epicures.haven@gmail.com">epicures.haven@gmail.com</a><br><br>
         Contact No.: <a style="color:rgb(120, 56, 4)" href="tel: 9100045000">9100045000</a><br>
         &emsp;&emsp;&emsp;&emsp;&emsp;     <a style="color:rgb(120, 56, 4)" href="tel: 9100046000">9100046000</a> <br><br>     
