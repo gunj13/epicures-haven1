@@ -54,6 +54,14 @@ pre {
     vertical-align:top;
   }
 
+  #location {
+    font-family:cinzel decorative;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align:top;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
 new
 
 *{
@@ -79,7 +87,7 @@ body{
   margin-bottom: 60px;
 }
 .section-title h4 {
-  font-size: 30px;
+  font-size: 45px;
   text-transform: uppercase;
   line-height: 60px;
   margin-top: 75px;
