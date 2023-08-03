@@ -65,38 +65,50 @@ pre {
   }
   
   /* Position the image container (needed to position the left and right arrows) */
-  .gallery-container {
-    justify-content: center; /* Horizontally center the items */
-    position: relative;
-    max-width: 700px;
-    float: center;
-   left:400px;
-  }
-  
-/* Hide the images by default */
-.mySlides {
-  
-  float: center;
-  text-align: center;
+.gallery-container {
+  justify-content: center; /* Horizontally center the items */
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto; /* Center the container */
+  border: 4px solid #BD6513; /* Add a nice border */
+  border-radius: 10px; /* Add rounded corners to the border */
+  overflow: hidden; /* Hide any content that overflows the container */
 }
 
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
+/* Hide the images by default */
+.mySlides {
+  animation: fade 1.5s ease-in-out;
+}
 
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
 
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
+/* Show the first slide by default */
+.mySlides:first-child {
+  display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.mySlides img {
+  height: 400px; /* Set the height for all images */
+  width: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+}
 
 .Testimonial-content {
   background-color: white;
@@ -166,6 +178,38 @@ footer {
   padding: 5px;
 }
 
-address {
-  margin-left:50px;
+.contact-section {
+  position: relative;
+  background-image: url('https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity here */
+  pointer-events: none; /* Allows clicks to pass through the overlay to the content */
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-map {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-section h3,
+.contact-section p,
+.contact-section a {
+  position: relative;
+  z-index: 1; /* Ensure the text is above the overlay */
 }
