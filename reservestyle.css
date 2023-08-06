@@ -64,8 +64,8 @@ new * {
   padding: 0;
   margin: 0;
 }
-body {
-  font-family: "Poppins", sans-serif;
+body{
+  font-family: 'Times New Roman', Times, serif;
 }
 .banner {
   min-height: 100vh;
