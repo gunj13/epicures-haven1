@@ -141,7 +141,7 @@ html {
 }
 
 footer {
-  border: 2px solid black;
+  background-color: #bd6513;
   padding: 8px;
 }
 
@@ -180,27 +180,24 @@ footer {
   color: black;
   text-align: left;
   font-size: 20px;
-  padding: 5px;
+  padding: 0px;
 }
 
 #scrollpic {
   position:relative;
-  width:100%;
-  height:100vh;
-  background: url('https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg');
-  background-size:100;
+  background-image: url('entrance-name1.png');
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
+  width:100%;
+  height:100vh;
 }
-
 
 #contact-section {
   position: relative;
-  background-image: url("https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(to bottom, #411f00, #5e2f08, #7c400c, #9c5210, #bd6513);  background-position: center;
   color: white;
+  height:100vh;
   padding: 50px;
 }
 
@@ -215,6 +212,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity here */
   pointer-events: none; /* Allows clicks to pass through the overlay to the content */
 }
+
 
 .contact-content {
   position: relative;
