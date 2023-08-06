@@ -1,130 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant Reservation</title>
-  <link rel="stylesheet" href="reservestyle.css">
-  <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="reservestyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel Decorative"
+      rel="stylesheet"
+    />
     <style>
-    .topnav {
-        font-family: 'Cinzel Decorative';
+      .topnav {
+        font-family: "Cinzel Decorative";
         font-size: 22px;
         font-weight: bold;
-    }
+      }
     </style>
-  
-   
-</head>
-<body>
-  <header>
-    <inline> <video id="video" src="circle_logo.mp4" height="250" autoplay loop alt="logo"></video>
+  </head>
+  <body>
+    <header>
+      <inline>
+        <video
+          id="video"
+          src="circle_logo.mp4"
+          height="250"
+          autoplay
+          loop
+          alt="logo"
+        ></video>
         <pre><h1>Epicure's Haven</h1>
           <h4>Indulge in the Art of Culinary Bliss</h4></pre>
-        <pre id="location">Epicure's Haven
+        <pre id="location">
+Epicure's Haven
                #45, Church Street, Ashok Nagar
-        Bangalore 560087</pre>
+        Bangalore 560087</pre
+        >
       </inline>
-  
-      <div class="topnav" class="child">
-          <a href="index.html">Home</a>
-          <a href="about.html">Our Story</a>
-          <a href="menu.html">Menu</a>
-          <a href="/index.html#contact">Contact Us</a>
-          <a class="active" href="reserve.html">Reserve a Table</a>
-        </div>
-    </div>
-  </header>
-  
-  </header>
 
-  <body>
-        
-    <section class="banner">
+      <div class="topnav" class="child">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Menu</a>
+        <a href="/index.html#contact">Contact Us</a>
+        <a class="active" href="reserve.html">Reserve a Table</a>
+      </div>
+    </header>
+
+    <body>
+      <section class="banner">
         <div class="section-title">
-            <h4>Reserve  a  table</h4>
+          <h4>Reserve a table</h4>
         </div>
         <div class="card-container">
-            <div class="card-img">
-                
-            </div>
+          <div class="card-img"></div>
 
-            <div class="card-content">
-                <h3>Reservation</h3>
-                <form id="reservation-form">
-                    <div class="form-row">
-                        <select name="days">
-                            <option value="day-select">Select Day</option>
-                            <option value="sunday">Sunday</option>
-                            <option value = "monday">Monday</option>
-                            <option value = "tuesday">Tuesday</option>
-                            <option value = "wednesday">Wednesday</option>
-                            <option value = "thursday">Thursday</option>
-                            <option value = "friday">Friday</option>
-                            <option value = "saturday">Saturday</option>
-                            
-                        </select>
+          <div class="card-content">
+            <h3>Reservation</h3>
+            <form id="reservation-form">
+              <div class="form-row">
+                <select name="days">
+                  <option value="day-select">Select Day</option>
+                  <option value="sunday">Sunday</option>
+                  <option value="monday">Monday</option>
+                  <option value="tuesday">Tuesday</option>
+                  <option value="wednesday">Wednesday</option>
+                  <option value="thursday">Thursday</option>
+                  <option value="friday">Friday</option>
+                  <option value="saturday">Saturday</option>
+                </select>
 
-                        <select name="hours">
-                            <option value="hour-select">Select Hour</option>
-                            <option value = "10">10: 00</option>
-                            <option value = "11">11: 00</option>
-                            <option value = "12">12: 00</option>
-                            <option value = "13">13: 00</option>
-                            <option value = "14">14: 00</option>
-                            <option value = "15">15: 00</option>
-                            <option value = "16">16: 00</option>
-                            <option value = "17">17: 00</option>
-                            <option value = "18">18: 00</option>
-                            <option value = "19">19: 00</option>
-                            <option value = "20">20: 00</option>
-                            <option value = "21">21: 00</option>
-                            <option value = "22">22: 00</option>
-                        </select>
-                    </div>
+                <select name="hours">
+                  <option value="hour-select">Select Hour</option>
+                  <option value="10">10: 00</option>
+                  <option value="11">11: 00</option>
+                  <option value="12">12: 00</option>
+                  <option value="13">13: 00</option>
+                  <option value="14">14: 00</option>
+                  <option value="15">15: 00</option>
+                  <option value="16">16: 00</option>
+                  <option value="17">17: 00</option>
+                  <option value="18">18: 00</option>
+                  <option value="19">19: 00</option>
+                  <option value="20">20: 00</option>
+                  <option value="21">21: 00</option>
+                  <option value="22">22: 00</option>
+                </select>
+              </div>
 
-                    <div class="form-row">
-                        <input type="text" name="fullName" placeholder="Full Name">
-                        <input type="text" name="phoneNumber" placeholder="Phone Number">
-                    </div>
+              <div class="form-row">
+                <input type="text" name="fullName" placeholder="Full Name" />
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  placeholder="Phone Number"
+                />
+              </div>
 
-                    <div class="form-row">
-                        <input type="number" name="persons" placeholder="How Many Persons?" min="1">
-                        <input type="submit" value="BOOK TABLE">
-                    </div>
-                </form>
-            </div>
+              <div class="form-row">
+                <input
+                  type="number"
+                  name="persons"
+                  placeholder="How Many Persons?"
+                  min="1"
+                />
+                <input type="submit" value="BOOK TABLE" />
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <script>
+      <script>
         const reservationForm = document.getElementById("reservation-form");
 
         reservationForm.addEventListener("submit", function (event) {
-            event.preventDefault(); 
-            
-            const fullName = reservationForm.elements.fullName.value;
-            const phoneNumber = reservationForm.elements.phoneNumber.value;
-            const persons = reservationForm.elements.persons.value;
+          event.preventDefault();
 
-            
-            if (fullName && phoneNumber && persons) {
-                
-                alert(`Table reserved for ${persons} persons.\nName: ${fullName}\nPhone: ${phoneNumber}`);
-                
-                reservationForm.reset();
-            } else {
-                
-                alert("Please fill in all the required fields.");
-            }
+          const fullName = reservationForm.elements.fullName.value;
+          const phoneNumber = reservationForm.elements.phoneNumber.value;
+          const persons = reservationForm.elements.persons.value;
+
+          if (fullName && phoneNumber && persons) {
+            alert(
+              `Table reserved for ${persons} persons.\nName: ${fullName}\nPhone: ${phoneNumber}`
+            );
+
+            reservationForm.reset();
+          } else {
+            alert("Please fill in all the required fields.");
+          }
         });
-    </script>
-    <footer>
+      </script>
+      <footer>
         <section class="foot">
-      Website Powered by TEAM-7 ✨
-      Copyright@Team-7
-      All Rights Reserved.
-    </section>
-    </footer>
-</body>
+          Website Powered by TEAM-7 ✨ Copyright@Team-7 All Rights Reserved.
+        </section>
+      </footer>
+    </body>
+  </body>
 </html>

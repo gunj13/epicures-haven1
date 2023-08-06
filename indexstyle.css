@@ -1,82 +1,82 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: white;
-    overflow: hidden;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-    z-index: 99999;
-  }
-  
+  background-color: white;
+  overflow: hidden;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: center;
-    color: black;
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-  
+
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color:#bd651351;
-    color: black;
-    font-size: large;
+  background-color: #bd651351;
+  color: black;
+  font-size: large;
 }
-  
+
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #BD6513;
-    color: white;
+  background-color: #bd6513;
+  color: white;
 }
 
 #video {
-  border:solid 1px #f0d396;
+  border: solid 1px #f0d396;
 }
 
 body {
   text-align: center;
   background-color: #f0d396;
 }
-  
+
 h4 {
   display: inline-block;
 }
 pre {
-  font-family:Cinzel Decorative ;
+  font-family: Cinzel Decorative;
   display: inline-block;
-  vertical-align:top;
+  vertical-align: top;
 }
 
 #location {
-  font-family:cinzel decorative;
+  font-family: cinzel decorative;
   font-size: 15px;
   display: inline-block;
-  vertical-align:top;
+  vertical-align: top;
   margin-top: 50px;
   margin-left: 50px;
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
 .gallery-container {
   justify-content: center; /* Horizontally center the items */
   position: relative;
   max-width: 80%;
-  height:90vh;
+  height: 90vh;
   margin: 0 auto; /* Center the container */
   overflow: hidden; /* Hide any content that overflows the container */
 }
 
 .gallery-container img {
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Hide the images by default */
@@ -85,8 +85,12 @@ pre {
 }
 
 @keyframes fade {
-  from { opacity: 0.4; }
-  to { opacity: 1; }
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Show the first slide by default */
@@ -116,66 +120,63 @@ pre {
 
 .Testimonial-content {
   background-color: white;
-  display:inline-block;
-  width:250px;
-  height:400px;
-  padding:20px;
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  padding: 20px;
 }
-  
 
 html {
   scroll-behavior: smooth;
 }
 
 .page {
-  border:#BD6513;
+  border: #bd6513;
   border-radius: 10px;
   border-style: double;
   margin-left: 30px;
   margin-right: 30px;
   font-size: large;
-  padding:8px;
+  padding: 8px;
 }
 
 footer {
   border: 2px solid black;
-  padding:8px;
+  padding: 8px;
 }
 
 #button1 {
-  padding:5px;
-  height:50px;
-  width:120px;
+  padding: 5px;
+  height: 50px;
+  width: 120px;
   font-size: 15px;
-  text-decoration:none;
-  background-color:#e37231;
-  color:WHITE;
+  text-decoration: none;
+  background-color: #e37231;
+  color: WHITE;
   border-radius: 10px;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
 }
 
 #button2 {
-  padding:5px;
-  height:50px;
-  width:120px;
+  padding: 5px;
+  height: 50px;
+  width: 120px;
   font-size: 15px;
-  text-decoration:none;
-  color:white;
-  background-color:rgba(30, 0, 200, 0.96);
+  text-decoration: none;
+  color: white;
+  background-color: rgba(30, 0, 200, 0.96);
   border-radius: 10px;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
 }
-
 
 .map {
- float:right;
- margin-top: -260px;
- margin-right:200px;
+  float: right;
+  margin-top: -260px;
+  margin-right: 200px;
 }
 
-
 .foot {
-  background-color:#bb610c8e;
+  background-color: #bb610c8e;
   color: black;
   text-align: left;
   font-size: 20px;
@@ -183,20 +184,18 @@ footer {
 }
 
 #scrollpic {
-  position:relative;
-  width:100%;
-  height:100vh;
-  background: url('https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg');
-  background-size:100;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg");
+  background-size: 100;
   background-position: center;
   background-attachment: fixed;
-
 }
-
 
 #contact-section {
   position: relative;
-  background-image: url('https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg');
+  background-image: url("https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg");
   background-size: cover;
   background-position: center;
   color: white;
