@@ -104,6 +104,16 @@ pre {
   text-transform: capitalize;
   margin-bottom: 30px;
 }
+
+.title:hover {
+  background-color: #974512;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
 .single-menu {
   background-color: #e79d6f;
   border: 10px solid #ddd;
