@@ -27,7 +27,7 @@
         <a class="active" href="#home">Home</a>
         <a href="about.html">Our Story</a>
         <a href="menu.html">Menu</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact-section">Contact Us</a>
         <a href="reserve.html">Reserve a Table</a>
       </div>
   </div>
@@ -185,13 +185,27 @@
 <hr>
 <br>
 
+<div id="scrollpic">
+  <p>Eclectic Continental Cuisine</p>
+  <h2>SOY DELICIOUS</h2>
+
+  <script type="text/javascript">
+    const bg = document.getElementById('header');
+    window.addEventListener('scroll', function() {
+      bg.style.backgroundSize = 160 - +window.pageYOffset/12+'%';
+      bg.style.opacity = 1 - +window.pageYOffset/100+'';
+
+    });
+  </script>
+</div>
+
 
 <div class="foot">
-  <section class="contact-section">
+  <section id="contact-section">
     <div class="overlay"></div> <!-- Add a div for the overlay -->
     <div class="contact-content">
       <h3><a style="color:rgb(255, 255, 255)"> CONTACT US</a></h3>
-      We'd love to hear from you!<br><br>
+      We would love to hear from you!<br><br>
       Email us at: <a style="color:rgb(255, 255, 255)" href="mailto: epicures.haven@gmail.com">epicures.haven@gmail.com</a><br><br>
       Contact No.: <a style="color:rgb(255, 255, 255)" href="tel: 9100045000">+91 00045000</a><br>
       <a style="color:rgb(255, 255, 255)" href="tel: 9100046000">+91 00046000</a> <br><br>
