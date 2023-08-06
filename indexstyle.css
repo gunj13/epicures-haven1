@@ -178,7 +178,19 @@ footer {
   padding: 5px;
 }
 
-.contact-section {
+#scrollpic {
+  position:relative;
+  width:100%;
+  height:100vh;
+  background: url('https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg');
+  background-size:100;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+
+#contact-section {
   position: relative;
   background-image: url('https://b.zmtcdn.com/data/pictures/2/19830002/7431d41972b4819510ecbbbc43f92c56.jpg');
   background-size: cover;
