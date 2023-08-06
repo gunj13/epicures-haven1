@@ -167,6 +167,75 @@ pre {
     margin-bottom: 30px;
   }
 }
+.menu-items a {
+  color: white;
+  /* text-align: center;
+  padding: 10px 16px; */
+  text-decoration: none;
+  font-size: 24px;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+}
+
+#heading1{
+  font-size: 33px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  margin-left: 505px;
+  margin-right: 500px;
+}
+
+#heading2{
+  font-size: 33px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  margin-left: 473px;
+  margin-right: 500px;
+}
+
+#heading3{
+  font-size: 33px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  margin-left: 535px;
+  margin-right: 500px;
+}
+
+#heading4{
+  font-size: 33px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  margin-left: 550px;
+  margin-right: 500px;
+}
+
+#heading5{
+  font-size: 33px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  margin-left: 520px;
+  margin-right: 500px;
+}
+
+#heading6{
+  font-size: 33px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
 footer {
   border: 2px solid black;
   padding:8px;
