@@ -1,0 +1,115 @@
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:#bd651351;
+    color: black;
+    font-size: large;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #BD6513;
+    color: white;
+}
+
+video:focus {
+  outline:none;
+}
+
+body {
+  text-align: center;
+  background-color: #f0d396;
+}
+  
+h4 {
+  display: inline-block;
+}
+pre {
+  font-family:Cinzel Decorative ;
+  display: inline-block;
+  vertical-align:top;
+}
+
+#location {
+  font-family:cinzel decorative;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align:top;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+    
+    
+body {
+  font-family: "Times New Roman", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+    }
+h2{
+  font-family: "Cinzel Decortive",cursive;
+    }
+
+footer {
+    border: 2px solid black;
+    padding:8px;
+      }
+    
+      .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-title h4 {
+      font-size: 40px;
+      text-transform: uppercase;
+      line-height: 60px;
+      margin-top: 75px;
+      margin-bottom: 0px;
+    }
+.about-content {
+  margin-top: 2rem;
+    }
+.about-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+    }
+
+.foot {
+    background-color:#bb610c8e;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+      }
