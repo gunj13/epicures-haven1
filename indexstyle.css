@@ -186,7 +186,11 @@ pre {
   background-attachment: fixed;
   width:100%;
   height:100vh;
+  justify-content: center;
+  color:white;
 }
+
+
 
 #contact-section {
   position: relative;

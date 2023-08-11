@@ -237,14 +237,10 @@ pre {
   margin-left: 500px;
   margin-right: 500px;
 }
+
 footer {
-  border: 2px solid black;
-  padding: 8px;
-}
-.foot {
-  background-color: #bb610c8e;
+  background-color: #bd6513;
+  padding: 2px;
   color: black;
-  text-align: left;
-  font-size: 20px;
-  padding: 5px;
+  text-align: center;
 }

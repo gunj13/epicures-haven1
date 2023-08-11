@@ -155,12 +155,9 @@ form input[type="submit"]:hover {
   }
 }
 
-footer {
-  border: 2px solid black;
-}
 .foot {
-  background-color: #bb610c8e;
+  background-color: #bd6513;
+  padding: 2px;
   color: black;
   text-align: center;
-  font-size: 20px;
 }
