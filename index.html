@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Epicure's Haven</title>
   <link rel="stylesheet" href="indexstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Cinzel Decorative" rel="stylesheet" />
   <style>
     .topnav {
@@ -14,6 +15,7 @@
       font-weight: bold;
     }
   </style>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -29,13 +31,22 @@
               Bangalore 560087</pre>
     </inline>
 
-    <div class="topnav" class="child">
+    <div class="hamburger" onclick="myFunction()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="topnav child" id="myLinks">
       <a class="active" href="#home">Home</a>
       <a href="about.html">Our Story</a>
       <a href="menu.html">Menu</a>
       <a href="#contact-section">Contact Us</a>
       <a href="reserve.html">Reserve a Table</a>
     </div>
+    
   </header>
 
   <br />
@@ -221,16 +232,7 @@
     <h2>SOY DELICIOUS</h2>
   </div>
 
-  <script type="text/javascript">
-    const bg = document.getElementById('scrollpic');
-    window.addEventListener('scroll', function () {
-      <!--bg.style.backgroundSize = 160 - +window.pageYOffset/12 + '%';-->
-      const scrollAmount = window.pageYOffset;
-      const scaleFactor = 1 + scrollAmount / 15000; // Adjust the divisor for the desired zoom intensity
-      bg.style.backgroundSize = `${scaleFactor * 100}%`;
-
-    });
-  </script>
+  
 
   <div class="foot">
     <section id="contact-section">
