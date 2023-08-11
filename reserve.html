@@ -61,17 +61,7 @@ Epicure's Haven
             <h3>Reservation</h3>
             <form id="reservation-form">
               <div class="form-row">
-                <select name="days">
-                  <option value="day-select">Select Day</option>
-                  <option value="sunday">Sunday</option>
-                  <option value="monday">Monday</option>
-                  <option value="tuesday">Tuesday</option>
-                  <option value="wednesday">Wednesday</option>
-                  <option value="thursday">Thursday</option>
-                  <option value="friday">Friday</option>
-                  <option value="saturday">Saturday</option>
-                </select>
-
+                <input type="date" name="reservationDate" placeholder="Date"/>
                 <select name="hours">
                   <option value="hour-select">Select Hour</option>
                   <option value="10">10: 00</option>
@@ -122,17 +112,21 @@ Epicure's Haven
           const fullName = reservationForm.elements.fullName.value;
           const phoneNumber = reservationForm.elements.phoneNumber.value;
           const persons = reservationForm.elements.persons.value;
+          const reservationDate = reservationForm.elements.reservationDate.value;
 
-          if (fullName && phoneNumber && persons) {
-            alert(
-              `Table reserved for ${persons} persons.\nName: ${fullName}\nPhone: ${phoneNumber}`
-            );
-
-            reservationForm.reset();
-          } else {
-            alert("Please fill in all the required fields.");
-          }
-        });
+          if (fullName && phoneNumber && persons && reservationDate) {
+      if (/^\d{10}$/.test(phoneNumber)) {
+        alert(
+          `Table reserved for ${persons} persons.\nName: ${fullName}\nPhone: ${phoneNumber}\nDate: ${reservationDate}`
+        );
+        reservationForm.reset();
+      } else {
+        alert("Phone number must be exactly 10 digits.");
+      }
+    } else {
+      alert("Please fill in all the required fields.");
+    }
+  });
       </script>
       <footer>
         <section class="foot">
