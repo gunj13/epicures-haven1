@@ -233,3 +233,128 @@ footer {
   background-color: #8c4401;
   padding: 8px;
 }
+
+@media (max-width: 768px) {
+  /* Styles for mobile screens */
+  .topnav a {
+    font-size: 14px;
+  }
+
+  /* Adjust logo size and position */
+  #video {
+    height: 150px;
+  }
+
+  pre {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  /* Adjust image sizes */
+  .mySlides img {
+    height: auto;
+  }
+
+  /* Adjust page and timings sections */
+  .page,
+  .timings {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  /* Testimonial section */
+  .testimonial {
+    padding: 20px;
+  }
+
+  .Testimonial-content {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  /* Contact section */
+  #contact-section {
+    padding: 20px;
+  }
+
+  .contact-content,
+  .contact-map {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Footer */
+  .foot {
+    padding: 20px;
+  }
+}
+
+/* Additional styles for larger screens */
+@media (min-width: 769px) {
+  /* Styles for laptop and larger screens */
+  .topnav a {
+    font-size: 17px;
+  }
+
+  /* Adjust logo size and position */
+  #video {
+    height: 250px;
+  }
+
+  pre {
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  /* Adjust image sizes */
+  .mySlides img {
+    height: 400px;
+  }
+
+  /* Adjust page and timings sections */
+  .page,
+  .timings {
+    width: 600px;
+    height: 400px;
+    margin: 0;
+  }
+
+  /* Testimonial section */
+  .testimonial {
+    padding: 50px 0;
+  }
+
+  .Testimonial-content {
+    width: 250px;
+    height: 400px;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Contact section */
+  #contact-section {
+    padding: 50px;
+  }
+
+  .contact-content,
+  .contact-map {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Footer */
+  .foot {
+    padding: 8px;
+  }
+}
