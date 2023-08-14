@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Epicure's Haven/Reserve A Table</title>
     <link rel="stylesheet" href="reservestyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link
       href="https://fonts.googleapis.com/css?family=Cinzel Decorative"
       rel="stylesheet"
@@ -16,6 +18,7 @@
         font-weight: bold;
       }
     </style>
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
@@ -37,17 +40,32 @@ Epicure's Haven
         >
       </inline>
 
-      <div class="topnav" class="child">
-          <a href="index.html">Home</a>
-          <a href="about.html">Our Story</a>
-          <a href="menu.html">Menu</a>
-          <a href="/index.html#contact-section">Contact Us</a>
-          <a class="active" href="reserve.html">Reserve a Table</a>
-        </div>
-    </div>
+      <div class="hamburger" onclick="toggleMobileNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <i class="fa fa-bars"></i>
+      </div>
+      
+      <div class="topnav child" id="myLinks" >
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Menu</a>
+        <a href="#contact-section">Contact Us</a>
+        <a class="active" href="#home">Reserve a Table</a>
+      </div>
+      <!-- Mobile Navigation Bar -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">Our Story</a>
+        <a href="menu.html" class="mobile-link">Menu</a>
+        <a href="#contact-section" class="mobile-link">Contact Us</a>
+        <a href="reserve.html" class="mobile-link">Reserve a Table</a>
+      </div>
+  
+    
   </header>
   
-  </header>
 
     <body>
       <section class="banner">
@@ -134,5 +152,20 @@ Epicure's Haven
         </section>
       </footer>
     </body>
-  </body>
+  
+  <script>
+    // Function to check viewport width and hide mobile nav if needed
+    function checkViewportWidth() {
+      var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      if (viewportWidth > 768) {
+        hideMobileNav();
+      }
+    }
+  
+    // Add event listener for window resize
+    window.addEventListener("resize", checkViewportWidth);
+  
+    // Initial check on page load
+    checkViewportWidth();
+  </script>
 </html>

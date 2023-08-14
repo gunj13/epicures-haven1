@@ -32,6 +32,49 @@
   background-color: #bd6513;
   color: white;
 }
+.hamburger {
+  display: none; /* Hide the hamburger on larger screens */
+  background: #bd6513;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+}
+
+.hamburger i {
+  color: white;
+}
+/* Mobile Navigation Bar Styles */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px); /* Move the mobile nav closer to the hamburger button */
+}
+
+.mobile-link {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.mobile-link:hover {
+  background-color: #bd651351;
+  color: black;
+  font-size: large;
+}
+
+/* Show mobile navigation when the hamburger is clicked */
+.show-mobile-nav {
+  display: block !important;
+}
 video:focus {
   outline: none;
 }
@@ -159,6 +202,13 @@ pre {
 }
 
 @media only screen and (max-width: 767px) {
+  .topnav a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
   .container {
     width: 350px;
   }
@@ -197,58 +247,3 @@ footer {
   color: black;
   text-align: center;
 }
-
-/* Existing CSS code */
-
-@media only screen and (max-width: 767px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
-  
-  .section-title h4 {
-    font-size: 28px;
-    line-height: 40px;
-    margin-top: 40px;
-  }
-  
-  .menu-items {
-    flex-basis: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .topnav a {
-    float: none;
-    margin: 10px 0;
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-  
-  .menus-area {
-    padding-bottom: 10px;
-  }
-  
-  .single-menu {
-    border: 5px solid #ddd;
-    margin-bottom: 20px;
-  }
-  
-  .single-menu span {
-    padding: 6px 15px;
-    font-size: 18px;
-  }
-  
-  .single-menu img {
-    max-width: 80px;
-    padding: 2px;
-  }
-  
-  .single-menu h4 {
-    font-size: 20px;
-  }
-  
-  footer {
-    padding: 5px;
-  }
-}
-

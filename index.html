@@ -238,18 +238,7 @@
       <p style= "font-size:30px;"><i>Eclectic Continental Cuisine</i></p>
       <h2 style= "font-size:40px;">SOY DELICIOUS</h2>
   </div>
-  <script type="text/javascript">
-
-      const bg = document.getElementById('scrollpic');
-      window.addEventListener('scroll', function () {
-      <!--bg.style.backgroundSize = 160 - +window.pageYOffset/12 + '%';-->
-      const scrollAmount = window.pageYOffset;
-      const scaleFactor = 1 + scrollAmount / 15000; // Adjust the divisor for the desired zoom intensity
-      bg.style.backgroundSize = `${scaleFactor * 100}%`;
-
-    });
   
-  </script>
 
   
 
@@ -290,5 +279,31 @@
     Website Powered by TEAM-7 ✨ Copyright@Team-7 All Rights Reserved.
   </footer>
 </body>
+<script type="text/javascript">
+
+  const bg = document.getElementById('scrollpic');
+  window.addEventListener('scroll', function () {
+  <!--bg.style.backgroundSize = 160 - +window.pageYOffset/12 + '%';-->
+  const scrollAmount = window.pageYOffset;
+  const scaleFactor = 1 + scrollAmount / 15000; // Adjust the divisor for the desired zoom intensity
+  bg.style.backgroundSize = `${scaleFactor * 100}%`;
+
+});
+  // Function to check viewport width and hide mobile nav if needed
+  function checkViewportWidth() {
+      var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      if (viewportWidth > 768) {
+        hideMobileNav();
+      }
+    }
+  
+    // Add event listener for window resize
+    window.addEventListener("resize", checkViewportWidth);
+  
+    // Initial check on page load
+    checkViewportWidth();
+  </script>
+
+</script>
 
 </html>
