@@ -73,11 +73,6 @@ h2 {
   font-family: "Cinzel Decortive", cursive;
 }
 
-footer {
-  border: 2px solid black;
-  padding: 8px;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -104,10 +99,9 @@ footer {
   margin: 2rem auto;
 }
 
-.foot {
-  background-color: #bb610c8e;
+footer {
+  background-color: #bd6513;
+  padding: 2px;
   color: black;
-  text-align: left;
-  font-size: 20px;
-  padding: 5px;
+  text-align: center;
 }

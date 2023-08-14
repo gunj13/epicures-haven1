@@ -1,47 +1,89 @@
 html {
   scroll-behavior: smooth;
 }
-/* Style the navigation menu */
+/* Add a black background color to the top navigation */
 .topnav {
+  background-color: white;
   overflow: hidden;
-  background-color: #333;
-  position: relative;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
 }
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
+/* Style the links inside the navigation bar */
 .topnav a {
-  color: white;
-  padding: 14px 16px;
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-/* Style the hamburger menu */
-.topnav a.icon {
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #bd651351;
+  color: black;
+  font-size: large;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #bd6513;
+  color: white;
+}
+.hamburger {
+  display: none; /* Hide the hamburger on larger screens */
   background: black;
-  display: block;
   position: absolute;
   right: 0;
   top: 0;
+  padding: 10px;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
+.hamburger i {
+  color: white;
+}
+/* Mobile Navigation Bar Styles */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px); /* Move the mobile nav closer to the hamburger button */
+}
+
+.mobile-link {
+  display: block;
+  padding: 10px;
   color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.mobile-link:hover {
+  background-color: #bd651351;
+  color: black;
+  font-size: large;
+}
+
+/* Show mobile navigation when the hamburger is clicked */
+.show-mobile-nav {
+  display: block !important;
+}
+
+#mylinks{
+  display: none;
 }
 
 /* Style the active link (or home/logo) */
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
+
 #video {
   border: solid 1px #f0d396;
 }
@@ -69,12 +111,11 @@ pre {
   margin-left: 50px;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 /* Position the image container (needed to position the left and right arrows) */
 .gallery-container {
+  
   justify-content: center; /* Horizontally center the items */
   position: relative;
   max-width: 800px;
@@ -85,7 +126,9 @@ pre {
 
 /* Hide the images by default */
 .mySlides {
+  display: none;
   animation: fade 1.5s ease-in-out;
+  
 }
 
 @keyframes fade {
@@ -129,19 +172,12 @@ pre {
   width:600px; 
   height:400px;
   margin-right:-700px;
-  margin-bottom: -180px;
+  margin-bottom: -230px;
 
 }
 
 .timings {
   font-size: large;
-  display:inline-block;
-  margin-right: -800px;
-  margin-top: -22000px;
-  margin-bottom: -100px;
-  padding: 8px; 
-  width:600px; 
-  height:400px;
   
 }
 
@@ -155,19 +191,28 @@ pre {
   color: WHITE;
   font-family: "Times New Roman";
 }
-
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  overflow: hidden; /* Hide any content that overflows */
+}
 .Testimonial-content {
   background-color: white;
   display: inline-block;
   width: 250px;
-  height: 400px;
+  height: auto;
   padding: 20px;
+  margin: 0 20px; /* Add some horizontal spacing between testimonial blocks */
+  text-align: center;
 }
+
 
 .map {
   float: right;
-  margin-top: -260px;
-  margin-right: 200px;
+  margin-top: -310px;
+  margin-right: -650px;
 }
 
 .foot {
@@ -186,14 +231,16 @@ pre {
   background-attachment: fixed;
   width:100%;
   height:100vh;
+  justify-content: center;
+  color:white;
 }
+
+
 
 #contact-section {
   position: relative;
-  background-image: linear-gradient(to bottom, #411f00, #5e2f08, #7c400c, #9c5210, #bd6513);  background-position: center;
   color: white;
-  height:100vh;
-  padding: 50px;
+  padding: 0;
 }
 
 
@@ -202,7 +249,7 @@ pre {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
   background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity here */
   pointer-events: none; /* Allows clicks to pass through the overlay to the content */
 }
@@ -228,4 +275,180 @@ pre {
 footer {
   background-color: #8c4401;
   padding: 8px;
+}
+@media (max-width: 768px) {
+  /* Styles for mobile screens */
+  /* Style the navigation menu */
+  .topnav a{
+    display: none;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: block;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #8c4401;
+    color: black;
+  }
+    
+  /* Adjust logo size and position */
+  #video {
+    height: 150px;
+  }
+
+  pre {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+  }
+
+  /* Adjust image sizes */
+  .mySlides img {
+    height: auto;
+  }
+
+  /* Adjust page and timings sections */
+  .page{
+    width: 100%;
+    height: auto;
+    margin: -7px;
+  }
+  .timings {
+    width: 100%;
+    height: auto;
+    margin: -5px;
+  }
+
+  /* Testimonial section */
+  .testimonial {
+    padding: 20px;
+  }
+
+  .Testimonial-content {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  /* Contact section */
+  #contact-section {
+    padding: 20px;
+  }
+
+  .contact-content{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .map {
+    float: none; /* Reset float property */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 90%; /* Restrict the width for phone view */
+    height: 200px; /* Set a fixed height */
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Footer */
+  .foot {
+    padding: 20px;
+  }
+}
+
+/* Additional styles for larger screens */
+@media (min-width: 769px) {
+  /* Styles for laptop and larger screens */
+  .topnav a {
+    display: inline-block;
+    font-size: 17px;
+
+  }
+  .hamburger{
+    display: none;
+  }
+
+  .topnav #mylinks{
+    display: none;
+  }
+  /* Adjust logo size and position */
+  #video {
+    height: 250px;
+  }
+
+  pre {
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  /* Adjust image sizes */
+  .mySlides img {
+    height: 400px;
+  }
+
+  /* Adjust page and timings sections */
+  
+
+  /* Testimonial section */
+  .testimonial {
+    padding: 50px 0;
+  }
+  
+  .timings {
+    margin-right: 0;
+    display:inline-block;
+    margin-right: -800px;
+    margin-top: -800px;
+    padding: 8px; 
+    width:600px; 
+    height:auto;
+  }
+
+  .Testimonial-content {
+    width: 250px;
+    height: 400px;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Contact section */
+  #contact-section {
+    padding: 50px;
+  }
+
+  
+  .contact-content,
+  .contact-map {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+  }
+
+  /* Footer */
+  .foot {
+    padding: 8px;
+  }
 }

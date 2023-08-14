@@ -31,22 +31,29 @@
               Bangalore 560087</pre>
     </inline>
 
-    <div class="hamburger" onclick="myFunction()">
+    <div class="hamburger" onclick="toggleMobileNav()">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
-    </a>
-    <div class="topnav child" id="myLinks">
+    </div>
+    
+    <div class="topnav child" id="myLinks" >
       <a class="active" href="#home">Home</a>
       <a href="about.html">Our Story</a>
       <a href="menu.html">Menu</a>
       <a href="#contact-section">Contact Us</a>
       <a href="reserve.html">Reserve a Table</a>
     </div>
-    
+    <!-- Mobile Navigation Bar -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">Our Story</a>
+    <a href="menu.html" class="mobile-link">Menu</a>
+    <a href="#contact-section" class="mobile-link">Contact Us</a>
+    <a href="reserve.html" class="mobile-link">Reserve a Table</a>
+  </div>
+
   </header>
 
   <br />
@@ -176,7 +183,7 @@
         &nbsp;&nbsp;
     </div>
     <div class="timings">
-      <pre><b>Timings</b></pre>
+      <pre><h3>Timings</h3></pre>
       <p>Monday ~ 10:00am - 10:00pm<br>
         Tuesday ~ 10:00am - 10:00pm<br>
         Wednesday ~ 10:00am - 10:00pm<br>
@@ -228,15 +235,27 @@
   <br />
 
   <div id="scrollpic">
-    <p>Eclectic Continental Cuisine</p>
-    <h2>SOY DELICIOUS</h2>
+      <p style= "font-size:30px;"><i>Eclectic Continental Cuisine</i></p>
+      <h2 style= "font-size:40px;">SOY DELICIOUS</h2>
   </div>
+  <script type="text/javascript">
+
+      const bg = document.getElementById('scrollpic');
+      window.addEventListener('scroll', function () {
+      <!--bg.style.backgroundSize = 160 - +window.pageYOffset/12 + '%';-->
+      const scrollAmount = window.pageYOffset;
+      const scaleFactor = 1 + scrollAmount / 15000; // Adjust the divisor for the desired zoom intensity
+      bg.style.backgroundSize = `${scaleFactor * 100}%`;
+
+    });
+  
+  </script>
 
   
 
   <div class="foot">
     <section id="contact-section">
-      <div class="overlay"></div>
+      
       <!-- Add a div for the overlay -->
       <div class="contact-content">
         <h2><a style="color: rgb(255, 255, 255)"> CONTACT US</a></h2><br>
@@ -246,6 +265,7 @@
           href="mailto: epicures.haven@gmail.com">epicures.haven@gmail.com</a><br /><br />
         Contact No.:
         <a style="color: rgb(255, 255, 255)" href="tel: 9100045000">+91 00045000</a><br />
+        &emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;  
         <a style="color: rgb(255, 255, 255)" href="tel: 9100046000">+91 00046000</a>
         <br /><br />
         Address: Epicure's Haven <br />
