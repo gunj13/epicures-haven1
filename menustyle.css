@@ -197,3 +197,58 @@ footer {
   color: black;
   text-align: center;
 }
+
+/* Existing CSS code */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .section-title h4 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 40px;
+  }
+  
+  .menu-items {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .topnav a {
+    float: none;
+    margin: 10px 0;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  .menus-area {
+    padding-bottom: 10px;
+  }
+  
+  .single-menu {
+    border: 5px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .single-menu span {
+    padding: 6px 15px;
+    font-size: 18px;
+  }
+  
+  .single-menu img {
+    max-width: 80px;
+    padding: 2px;
+  }
+  
+  .single-menu h4 {
+    font-size: 20px;
+  }
+  
+  footer {
+    padding: 5px;
+  }
+}
+
