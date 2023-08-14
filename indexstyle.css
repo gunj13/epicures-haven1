@@ -10,7 +10,7 @@ html {
   top: 0px;
   z-index: 99999;
 }
-/* Style the links inside the navigation bar */
+
 .topnav a {
   float: center;
   color: black;
@@ -22,21 +22,20 @@ html {
   margin-bottom: 30px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #bd651351;
   color: black;
   font-size: large;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color: #bd6513;
   color: white;
 }
+
 .hamburger {
   display: none; /* Hide the hamburger on larger screens */
-  background: black;
+  background: #bd6513;
   position: absolute;
   right: 0;
   top: 0;
@@ -111,6 +110,9 @@ pre {
   margin-left: 50px;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -282,6 +284,13 @@ footer {
   .topnav a{
     display: none;
   }
+  .mobile-nav {
+    display: none;
+  }
+
+  .show-mobile-nav {
+  display: block !important;
+  }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
@@ -381,11 +390,9 @@ footer {
 /* Additional styles for larger screens */
 @media (min-width: 769px) {
   /* Styles for laptop and larger screens */
-  .topnav a {
-    display: inline-block;
-    font-size: 17px;
+  
 
-  }
+ 
   .hamburger{
     display: none;
   }

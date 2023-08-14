@@ -7,3 +7,8 @@ function toggleMobileNav() {
     mobileNav.style.display = "block";
   }
 }
+
+function hideMobileNav() {
+  var mobileNav = document.getElementById("mobileNav");
+  mobileNav.style.display = "none";
+}

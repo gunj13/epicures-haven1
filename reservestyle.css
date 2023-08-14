@@ -42,6 +42,49 @@ header {
   color: white;
 }
 
+.hamburger {
+  display: none; /* Hide the hamburger on larger screens */
+  background: #bd6513;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+}
+
+.hamburger i {
+  color: white;
+}
+/* Mobile Navigation Bar Styles */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px); /* Move the mobile nav closer to the hamburger button */
+}
+
+.mobile-link {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.mobile-link:hover {
+  background-color: #bd651351;
+  color: black;
+  font-size: large;
+}
+
+/* Show mobile navigation when the hamburger is clicked */
+.show-mobile-nav {
+  display: block !important;
+}
 h4 {
   display: inline-block;
 }
@@ -160,4 +203,30 @@ form input[type="submit"]:hover {
   padding: 2px;
   color: black;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .topnav a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  header {
+    padding: 1rem 0; /* Add padding to top and bottom */
+  }
+
+  /* Adjust video size */
+  #video {
+    height: 150px; /* Decrease height for mobile view */
+  }
+
+  /* Adjust location info */
+  #location {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
 }
