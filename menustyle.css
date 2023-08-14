@@ -178,65 +178,20 @@ pre {
   font-size: 24px;
 }
 
-#heading1 {
-  font-size: 33px;
-  text-transform: uppercase;
-  line-height: 60px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-  margin-left: 505px;
-  margin-right: 500px;
-}
-
-#heading2 {
-  font-size: 33px;
-  text-transform: uppercase;
-  line-height: 60px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-  margin-left: 473px;
-  margin-right: 500px;
-}
-
-#heading3 {
-  font-size: 33px;
-  text-transform: uppercase;
-  line-height: 60px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-  margin-left: 535px;
-  margin-right: 500px;
-}
-
-#heading4 {
-  font-size: 33px;
-  text-transform: uppercase;
-  line-height: 60px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-  margin-left: 550px;
-  margin-right: 500px;
-}
-
-#heading5 {
-  font-size: 33px;
-  text-transform: uppercase;
-  line-height: 60px;
-  margin-top: -10px;
-  margin-bottom: 15px;
-  margin-left: 520px;
-  margin-right: 500px;
-}
-
+#heading1,
+#heading2,
+#heading3,
+#heading4,
+#heading5,
 #heading6 {
   font-size: 33px;
   text-transform: uppercase;
   line-height: 60px;
   margin-top: -10px;
   margin-bottom: 15px;
-  margin-left: 500px;
-  margin-right: 500px;
+  width: 100vw;
 }
+
 footer {
   border: 2px solid black;
   padding: 8px;
