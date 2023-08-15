@@ -1,3 +1,7 @@
+body{
+  border: 2px solid brown;
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -99,8 +103,9 @@ pre {
   font-size: 15px;
   display: inline-block;
   vertical-align: top;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 50px;
+  
 }
 new * {
   box-sizing: border-box;
@@ -216,7 +221,10 @@ form input[type="submit"]:hover {
   header {
     padding: 1rem 0; /* Add padding to top and bottom */
   }
-
+  #location{
+    position: relative;
+    right: 10px;
+  }
   /* Adjust video size */
   #video {
     height: 150px; /* Decrease height for mobile view */

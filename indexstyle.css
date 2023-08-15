@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  border: 2px solid brown;
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -108,6 +110,8 @@ pre {
   vertical-align: top;
   margin-top: 50px;
   margin-left: 50px;
+  position: relative;
+  top: 37px;
 }
 
 * {
@@ -168,19 +172,25 @@ pre {
 }
 
 .page {
-  font-size: large;
-  margin-left:100px;
-  padding: 10px; 
-  width:600px; 
-  height:400px;
-  margin-right:-700px;
-  margin-bottom: -230px;
+width: 35%;
+font-size: large;
+position: relative;
+top: 35px;
+left: 240px;
+
 
 }
 
 .timings {
   font-size: large;
-  
+  position: relative;
+  right: 60px;
+  bottom: 40px;
+}
+.timings h3{
+  position: relative;
+  top: 30px;
+  right: 20px;
 }
 
 #button1 {
@@ -240,9 +250,11 @@ pre {
 
 
 #contact-section {
+  width: 60%;
   position: relative;
+  left: 150px;
   color: white;
-  padding: 0;
+  
 }
 
 
@@ -318,7 +330,7 @@ footer {
     
   /* Adjust logo size and position */
   #video {
-    height: 150px;
+    height: 250px;
   }
 
   pre {
@@ -335,16 +347,38 @@ footer {
 
   /* Adjust page and timings sections */
   .page{
-    width: 100%;
-    height: auto;
-    margin: -7px;
+    margin-left: 0px;
+    width: 80%;
+    display: block;
+    position: relative;
+    left: 35px;
+    top: 0px;
+    bottom: 300px;
+    margin-top: 0;
   }
   .timings {
+    left: 4px;
+    top: 5px;
     width: 100%;
     height: auto;
     margin: -5px;
   }
-
+  .yy{
+    position: relative;
+    right: 20px;
+    bottom: 50px;
+  }
+  #location {
+ 
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+    right: 30px;
+    top: 0px;
+    bottom: 100px;
+  }
   /* Testimonial section */
   .testimonial {
     padding: 20px;
@@ -359,6 +393,8 @@ footer {
 
   /* Contact section */
   #contact-section {
+    width: 100%;
+    left: 0px;
     padding: 20px;
   }
 
@@ -446,7 +482,7 @@ footer {
     padding: 50px;
   }
 
-  
+ 
   .contact-content,
   .contact-map {
     width: 50%;

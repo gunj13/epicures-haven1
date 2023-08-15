@@ -1,4 +1,11 @@
 /* Add a black background color to the top navigation */
+html{
+  overflow-x: hidden;
+  border: 2px solid brown;
+}
+body{
+  overflow-x: hidden;
+}
 .topnav {
   background-color: white;
   overflow: hidden;
@@ -219,6 +226,12 @@ pre {
   .menu-items {
     flex-basis: 100%;
     margin-bottom: 30px;
+  }
+  #location{
+    position: relative;
+    right: 70px;
+    bottom: 50px;
+
   }
 }
 .menu-items a {
