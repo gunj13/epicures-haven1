@@ -109,10 +109,7 @@ footer {
   color: black;
   text-align: center;
 }
-.trk{
-  height: 260;
-  width: 400;
-}
+
 
 @media only screen and (max-width: 767px) {
   body{
@@ -123,14 +120,6 @@ footer {
     right: 40px;
     bottom: 40px;
   }
-  .container{
-    display: block;
-    width: 70%;
-    overflow-x: hidden;
-  }
-  .trk{
-    position: relative;
-    right: 100px;
-    
-  }
+
+  
 }
